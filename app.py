@@ -46,6 +46,7 @@ parser.add_argument('--transform_matrix', type=str, default='transform.mat',
 def main(options: Namespace, inputdir: Path, outputdir: Path):
 
     print(title)
+
     fixed_image_path = join(inputdir, options.fixed_image)
     moving_image_path = join(inputdir, options.moving_image)
     registered_image_path = join(outputdir, options.registered_image)
