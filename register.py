@@ -5,8 +5,8 @@ def register_images_rigid(fixed_image_path, moving_image_path, registered_moving
                           dof=6, cost='mutualinfo'):
 
     flirt = FLIRT()                             # https://fsl.fmrib.ox.ac.uk/fsl/docs/#/registration/flirt/index
-    flirt.inputs.in_file = moving_image_path
     flirt.inputs.reference = fixed_image_path
+    flirt.inputs.in_file = moving_image_path
     flirt.inputs.out_file = registered_moving_image_path
     flirt.inputs.out_matrix_file = transform_matrix_path
     flirt.inputs.dof = dof      # Degrees of freedom should be 6 for rigid registration
