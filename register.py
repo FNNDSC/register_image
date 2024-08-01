@@ -27,7 +27,7 @@ if __name__ == '__main__':
     register_images_rigid(fixed_image_path, moving_image_path, registered_moving_image_path, transform_matrix_path)
 
     # ToDo: test results show that:
-    #  1. FLIRT takes ~1-2 minutes to complete. Will explore faster rigid registration strategies. It would be
+    #  1. FLIRT takes ~2 minutes to complete. Will explore faster rigid registration strategies. It would be
     #  great if we can figure out what registration strategy Visage uses, because that takes ~10 seconds.
     #  2. the registered image is a bit blurrier than the original image. Will explore on better resampling strategies
     #  such as B-spline interpolation.
