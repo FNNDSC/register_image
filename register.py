@@ -9,7 +9,7 @@ def register_images_rigid(fixed_image_path, moving_image_path, registered_moving
     flirt.inputs.out_file = registered_moving_image_path
     flirt.inputs.out_matrix_file = transform_matrix_path
     flirt.inputs.dof = dof      # Degrees of freedom should be 6 for rigid registration
-    flirt.inputs.cost = cost    # mutual information is the best option for cost function
+    flirt.inputs.cost = cost    # mutual information or normalized mutual information are best options
 
     result = flirt.run()
     print(f"Registered image saved to {registered_moving_image_path}")
