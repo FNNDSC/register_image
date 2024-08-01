@@ -1,4 +1,4 @@
-# Image Reslice Plugin
+# ChRIS Register Image Plugin
 
 [![test status](https://github.com/FNNDSC/python-chrisapp-template/actions/workflows/src.yml/badge.svg)](https://github.com/FNNDSC/register_image)
 [![MIT License](https://img.shields.io/github/license/FNNDSC/python-chrisapp-template)](LICENSE)
