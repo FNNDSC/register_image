@@ -23,7 +23,7 @@ parser.add_argument('--fixed_image', type=str, default='fixed_image.nii.gz',
                     help='relative path to the fixed image in relation to input folder')
 parser.add_argument('--moving_image', type=str, default='moving_image.nii.gz',
                     help='relative path to the moving image in relation to input folder')
-parser.add_argument('--registered_image', type=str, default='registered_moving_image.nii.gz',
+parser.add_argument('--registered_moving_image', type=str, default='registered_moving_image.nii.gz',
                     help='relative path to the registered image in relation to output folder')
 parser.add_argument('--transform_matrix', type=str, default='transform.mat',
                     help='relative path to the transformation matrix in relation to output folder')
@@ -49,7 +49,7 @@ def main(options: Namespace, inputdir: Path, outputdir: Path):
 
     fixed_image_path = join(inputdir, options.fixed_image)
     moving_image_path = join(inputdir, options.moving_image)
-    registered_image_path = join(outputdir, options.registered_image)
+    registered_image_path = join(outputdir, options.registered_moving_image)
     transform_matrix_path = join(outputdir, options.transform_matrix)
     dof = options.dof
     cost = options.cost

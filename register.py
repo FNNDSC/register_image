@@ -25,3 +25,6 @@ if __name__ == '__main__':
     transform_matrix_path = '/Users/arman/projects/register_image/data/nifti/transform.mat'
 
     register_images_rigid(fixed_image_path, moving_image_path, output_image_path, transform_matrix_path)
+
+    # ToDo: test results show that the registered image is a bit blurrier than the original image.
+    #  Will work on better resampling strategies.
