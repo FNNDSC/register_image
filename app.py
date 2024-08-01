@@ -14,9 +14,10 @@ title = r"""
 
 """
 
-parser = ArgumentParser(description='This plugin re-orients a 3D scan (CT, MRI, PET, etc) into standard planes,'
-                                    're-slices the re-oriented image, and saves the re-oriented images as a '
-                                    'NIfTI file.',
+parser = ArgumentParser(description='This plugin registers a moving 3D image (CT, MRI, PET, etc) onto another'
+                                    'fixed image and saves the registered moving image as well as '
+                                    'the transformation matrix. The fixed, moving, and registered moving images '
+                                    'are all in NIfTI format.',
                         formatter_class=ArgumentDefaultsHelpFormatter)
 parser.add_argument('--fixed_image', type=str, default='fixed_image.nii.gz',
                     help='relative path to the fixed image in relation to input folder')
