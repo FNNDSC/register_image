@@ -27,19 +27,18 @@ parser.add_argument('--registered_image', type=str, default='registered_moving_i
                     help='relative path to the registered image in relation to output folder')
 parser.add_argument('--transform_matrix', type=str, default='transform.mat',
                     help='relative path to the transformation matrix in relation to output folder')
-parser.add_argument('--dof', type=str, default='6',
+parser.add_argument('--dof', type=int, default=6,
                     help='degrees of freedom to use in registration. Default = 6 (i.e. rigid registration).')
 parser.add_argument('--cost', type=str, default='mutualinfo',
-                    help='cost function used in registration. Default=mutualinfo.')
+                    help='cost function used in registration. Default = mutualinfo (mutual information).')
 
 
 # ToDo: how can I determine the minimum memory and CPU required for this plugin?
-
 @chris_plugin(
     parser=parser,
     title='register_image',
     category='3D Image Processing',
-    min_memory_limit='1Gi',         # supported units: Mi, Gi
+    min_memory_limit='2.5Gi',         # supported units: Mi, Gi
     min_cpu_limit='1000m',          # millicores, e.g. "1000m" = 1 CPU core
     min_gpu_limit=0)                # set min_gpu_limit=1 to enable GPU
 
