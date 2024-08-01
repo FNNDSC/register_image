@@ -29,5 +29,5 @@ if __name__ == '__main__':
     # ToDo: test results show that:
     #  1. FLIRT takes ~2 minutes to complete. Will explore faster rigid registration strategies. It would be
     #  great if we can figure out what registration strategy Visage uses, because that takes ~10 seconds.
-    #  2. the registered image is a bit blurrier than the original image. Will explore on better resampling strategies
+    #  2. the registered image is a bit blurrier than the original image. Will explore better resampling strategies
     #  such as B-spline interpolation.
