@@ -32,6 +32,7 @@ parser.add_argument('--cost', type=str, default='mutualinfo',
                     help='cost function used in registration. Default=mutualinfo.')
 
 
+# ToDo: how can I determine the minimum memory and CPU required for this plugin?
 
 @chris_plugin(
     parser=parser,
