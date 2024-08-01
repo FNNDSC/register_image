@@ -34,7 +34,7 @@ parser.add_argument('--cost', type=str, default='mutualinfo',
 
 
 # ToDo: how can I determine the minimum memory and CPU required for this plugin? I roughly estimated the required
-#  memory by looking up Activity Monitor app on my Mac :D
+#  memory by looking up how much memory the registration process needed on the Activity Monitor app on my Mac :D
 @chris_plugin(
     parser=parser,
     title='register_image',
