@@ -54,7 +54,7 @@ def main(options: Namespace, inputdir: Path, outputdir: Path):
     dof = options.dof
     cost = options.cost
 
-    register_images_rigid(fixed_image_path, moving_image_path, registered_image_path,transform_matrix_path,
+    register_images_rigid(fixed_image_path, moving_image_path, registered_image_path, transform_matrix_path,
                           dof, cost)
 
 
