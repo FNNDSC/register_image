@@ -23,19 +23,8 @@ and creates data to an output directory with the usage
 
 For more information, visit our website https://chrisproject.org
 
-## How to Use This Template
 
-Go to https://github.com/FNNDSC/python-chrisapp-template and click "Use this template".
-The newly created repository is ready to use right away.
-
-A script `bootstrap.sh` is provided to help fill in and rename values for your new project.
-It is optional to use.
-
-1. Edit the variables in `bootstrap.sh`
-2. Run `./bootstrap.sh`
-3. Follow the instructions it will print out
-
-## Example Plugins
+## Examples of other ChRIS Plugins
 
 Here are some good, complete examples of _ChRIS_ plugins created from this template.
 
