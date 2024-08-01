@@ -7,7 +7,7 @@ setup(name='register_image',
     author_email='dev@babyMRI.org',
     url='https://github.com/FNNDSC/register_image',
     py_modules=['app', 'register'],
-    install_requires=['chris_plugin', 'FSL'],
+    install_requires=['chris_plugin', 'FSL'],  # ToDo: can I add FSL like that?
     license='MIT',
     entry_points={'console_scripts': ['register_image = app:main']},
     classifiers=[
