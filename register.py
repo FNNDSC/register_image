@@ -9,7 +9,7 @@ def register_images_rigid(fixed_image_path, moving_image_path, registered_image_
         '-ref', fixed_image_path,
         '-out', registered_image_path,
         '-omat', transform_matrix_path,
-        '-dof', dof,  # Degrees of freedom should be 6 for rigid transformation
+        '-dof', dof,  # Degrees of freedom should be 6 for rigid registration
         '-cost', cost  # mutual information is the best option for images obtained at different scanners
     ]
     # Execute the flirt command
