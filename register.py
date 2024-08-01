@@ -17,6 +17,8 @@ def register_images_rigid(fixed_image_path, moving_image_path, registered_moving
     print(f"Transform matrix saved to {transform_matrix_path}")
 
 
+
+
 # CODE TESTING:
 
 if __name__ == '__main__':
