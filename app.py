@@ -49,12 +49,12 @@ def main(options: Namespace, inputdir: Path, outputdir: Path):
 
     fixed_image_path = join(inputdir, options.fixed_image)
     moving_image_path = join(inputdir, options.moving_image)
-    registered_image_path = join(outputdir, options.registered_moving_image)
+    registered_moving_image_path = join(outputdir, options.registered_moving_image)
     transform_matrix_path = join(outputdir, options.transform_matrix)
     dof = options.dof
     cost = options.cost
 
-    register_images_rigid(fixed_image_path, moving_image_path, registered_image_path, transform_matrix_path,
+    register_images_rigid(fixed_image_path, moving_image_path, registered_moving_image_path, transform_matrix_path,
                           dof, cost)
 
 
