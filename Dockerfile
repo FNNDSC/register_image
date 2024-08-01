@@ -4,8 +4,9 @@
 FROM docker.io/python:3.12.1-slim-bookworm
 
 LABEL org.opencontainers.image.authors="FNNDSC <dev@babyMRI.org>" \
-      org.opencontainers.image.title="ChRIS Plugin Title" \
-      org.opencontainers.image.description="A ChRIS plugin that..."
+      org.opencontainers.image.title="register_image" \
+      org.opencontainers.image.description="This plugin re-orients a 3D scan (CT, MRI, PET, etc) into standard ' \
+      ' planes, re-slices the re-oriented image, and saves the re-oriented images as a NIfTI file."
 
 ARG SRCDIR=/usr/local/src/app
 WORKDIR ${SRCDIR}

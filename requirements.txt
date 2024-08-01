@@ -1,7 +1,9 @@
 
 argparse~=1.4.0
 setuptools~=72.1.0
-FSL~=6.0.7.12   # https://fsl.fmrib.ox.ac.uk/fsl/docs/#/install/index
+
+# How can I add FSL to the requirements? It cannot be installed using pip install :(
+# FSL~=6.0.7.12   # https://fsl.fmrib.ox.ac.uk/fsl/docs/#/install/index
 
 # ---------------------
 # NOT REQUIRED ANYMORE:
