@@ -1,4 +1,5 @@
-from nipype.interfaces.fsl import FLIRT         # needs FSL to be installed on the computer to work
+
+from nipype.interfaces.fsl import FLIRT         # This requires FSL to be installed on the computer for it to work
 
 def register_images_rigid(fixed_image_path, moving_image_path, registered_moving_image_path, transform_matrix_path,
                           dof=6, cost='mutualinfo'):
