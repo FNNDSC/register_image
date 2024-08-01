@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(name='register_image',
     version='1.0.0',
-    description='A ChRIS plugin for image registration and reslicing.',
+    description='A ChRIS plugin for image registration and re-slicing.',
     author='FNNDSC / Arman Avesta, MD, PhD',
     author_email='dev@babyMRI.org',
     url='https://github.com/FNNDSC/register_image',
