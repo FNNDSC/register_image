@@ -8,7 +8,7 @@ from register import register_images_rigid
 
 
 
-title = """
+title = r"""
 
                         ###########################
                         ChRIS Register Image Plugin
