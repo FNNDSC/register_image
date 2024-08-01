@@ -23,6 +23,9 @@ and creates data to an output directory with the usage
 
 For more information, visit our website https://chrisproject.org
 
+## Usage Instructions
+
+_to do_.
 
 ## Examples of other ChRIS Plugins
 
