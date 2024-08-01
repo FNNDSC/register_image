@@ -21,10 +21,10 @@ def register_images_rigid(fixed_image_path, moving_image_path, registered_image_
 # CODE TESTING:
 
 if __name__ == '__main__':
-    fixed_image_path = '/Users/arman/projects/image-reslice/data/nifti/fixed.nii.gz'
-    moving_image_path = '/Users/arman/projects/image-reslice/data/nifti/moving.nii.gz'
-    output_image_path = '/Users/arman/projects/image-reslice/data/nifti/moving_registered.nii.gz'
-    transform_matrix_path = '/Users/arman/projects/image-reslice/data/nifti/transform.mat'
+    fixed_image_path = '/Users/arman/projects/register_image/data/nifti/fixed.nii.gz'
+    moving_image_path = '/Users/arman/projects/register_image/data/nifti/moving.nii.gz'
+    output_image_path = '/Users/arman/projects/register_image/data/nifti/moving_registered.nii.gz'
+    transform_matrix_path = '/Users/arman/projects/register_image/data/nifti/transform.mat'
 
     register_images_rigid(fixed_image_path, moving_image_path, output_image_path, transform_matrix_path)
 
