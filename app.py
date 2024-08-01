@@ -9,7 +9,7 @@ from register import register_images_rigid
 title = r"""
 
                         ###########################
-                        ChRIS Image Re-slice Plugin
+                        ChRIS Register Image Plugin
                         ###########################
 
 """
@@ -35,7 +35,7 @@ parser.add_argument('--transform_matrix', type=str, default='transform.mat',
 
 @chris_plugin(
     parser=parser,
-    title='imgreslice',
+    title='register_image',
     category='3D Image Processing',
     min_memory_limit='1Gi',         # supported units: Mi, Gi
     min_cpu_limit='1000m',          # millicores, e.g. "1000m" = 1 CPU core
