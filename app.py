@@ -6,7 +6,9 @@ from argparse import ArgumentParser, Namespace, ArgumentDefaultsHelpFormatter
 from chris_plugin import chris_plugin
 from register import register_images_rigid
 
-title = r"""
+
+
+title = """
 
                         ###########################
                         ChRIS Register Image Plugin
