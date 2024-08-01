@@ -22,16 +22,15 @@ parser.add_argument('--fixed_image', type=str, default='fixed_image.nii.gz',
                     help='relative path to the fixed image in relation to input folder')
 parser.add_argument('--moving_image', type=str, default='moving_image.nii.gz',
                     help='relative path to the moving image in relation to input folder')
-
+parser.add_argument('--registered_image', type=str, default='registered_moving_image.nii.gz',
+                    help='relative path to the registered image in relation to output folder')
+parser.add_argument('--transform_matrix', type=str, default='transform.mat',
+                    help='relative path to the transformation matrix in relation to output folder')
 parser.add_argument('--dof', type=str, default='6',
                     help='degrees of freedom to use in transformation. Default=6, i.e. rigid registration.')
 parser.add_argument('--cost', type=str, default='mutualinfo',
                     help='cost function used in registration. Default=mutualinfo.')
 
-parser.add_argument('--registered_image', type=str, default='registered_moving_image.nii.gz',
-                    help='relative path to the registered image in relation to output folder')
-parser.add_argument('--transform_matrix', type=str, default='transform.mat',
-                    help='relative path to the transformation matrix in relation to output folder')
 
 
 @chris_plugin(
