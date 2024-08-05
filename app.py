@@ -4,6 +4,7 @@ from os.path import join
 from pathlib import Path
 from argparse import ArgumentParser, Namespace, ArgumentDefaultsHelpFormatter
 from chris_plugin import chris_plugin
+
 from register import register_images_rigid
 
 
